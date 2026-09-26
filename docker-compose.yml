@@ -64,6 +64,7 @@ services:
       - "443:443"
     volumes:
       - ./frontend:/usr/share/nginx/html
+      - ./publicNails:/usr/share/nginx/html/public/nails/front:ro
       - /opt/landing:/usr/share/nginx/landing
       - /opt/landing_abp:/usr/share/nginx/landing_abp
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
