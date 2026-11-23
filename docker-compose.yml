@@ -67,7 +67,7 @@ services:
   # 🌐 NGINX (FRONT + PROXY)
   # =========================
   nginx:
-    image: nginx:latest
+    image: nginx:1.31.9
     container_name: citas_nginx
     restart: always
     ports:
